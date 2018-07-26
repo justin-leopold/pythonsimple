@@ -4,8 +4,8 @@ from datetime import datetime, timedelta
 
 
 def main():
-    hostname = 'pw-slrwnds01-p'
-    username = 'justin_leopold@dpsuser.dpsk12.org'
+    hostname = 'solarwinds'
+    username = 'username@domain.com'
     password = 'password'
 
     swis = SwisClient(hostname, username, password)
