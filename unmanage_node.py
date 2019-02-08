@@ -9,7 +9,7 @@ def main():
     password = 'password'
 
     swis = SwisClient(hostname, username, password)
-    results = swis.query('SELECT NodeID, Caption FROM Orion.Nodes WHERE IPAddress = @ip_addr', ip_addr='10.0.236.22')
+    results = swis.query('SELECT NodeID, Caption FROM Orion.Nodes WHERE IPAddress = @ip_addr', ip_addr='10.X.X.X')
     if results['results']:
         nodeId = results['results'][0]['NodeID']
         caption = results['results'][0]['Caption']
